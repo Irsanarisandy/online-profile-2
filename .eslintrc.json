@@ -1,0 +1,22 @@
+{
+    "extends": ["react-app", "airbnb"],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "jsx-a11y/href-no-hash": [0],
+        "react/destructuring-assignment": [1],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/prefer-stateless-function": [1],
+        "arrow-parens": "off",
+        "comma-dangle": "off",
+        "indent": ["error", 4],
+        "linebreak-style": "off",
+        "no-unused-vars": "warn",
+        "object-curly-newline": "off"
+    }
+}

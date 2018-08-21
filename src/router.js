@@ -2,15 +2,18 @@ import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { CustomNav } from './components/CustomNav';
 import { Landing } from './pages/Landing';
+import './styles/main.css';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div>
+        <div id="mainContainer">
             <CustomNav />
-            <Switch>
-                <Route exact={true} path="/" component={Landing} />
-                <Redirect from="*" to="/" />
-            </Switch>
+            <div id="pageContent">
+                <Switch>
+                    <Route exact path="/" component={Landing} />
+                    <Redirect from="*" to="/" />
+                </Switch>
+            </div>
         </div>
     </BrowserRouter>
 );
