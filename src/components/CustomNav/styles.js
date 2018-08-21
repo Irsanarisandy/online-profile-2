@@ -1,4 +1,4 @@
-// don't forget to set margin-left of pageContent in main.css to be +20 of drawerWidth
+// don't forget to set margin-left of pageContent in main.css
 const drawerWidth = 190;
 
 export default {

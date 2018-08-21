@@ -33,7 +33,7 @@ class CustomNav extends React.Component {
         const { classes } = this.props;
         return (
             <div>
-                <MediaQuery maxWidth={598}>
+                <MediaQuery maxWidth={940}>
                     <AppBar position="static">
                         <Toolbar>
                             <IconButton
@@ -58,7 +58,7 @@ class CustomNav extends React.Component {
                     </SwipeableDrawer>
                 </MediaQuery>
                 {/* don't forget to set min-width of pageContent in main.css */}
-                <MediaQuery minWidth={598}>
+                <MediaQuery minWidth={941}>
                     <Drawer
                         variant="permanent"
                         anchor="left"

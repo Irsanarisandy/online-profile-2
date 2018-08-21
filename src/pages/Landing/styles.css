@@ -1,0 +1,33 @@
+#text-editor pre {
+    background-color: #000000;
+    box-shadow: 0.1em 0.1em 0.8em #6b6b6b;
+    color: #ffffff;
+    counter-reset: line;
+    font-family: Arvo, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px 0;
+    min-width: 670px;
+    width: 100%;
+}
+
+#text-editor span {
+    display: flex;
+    line-height: 1.5rem;
+}
+
+#text-editor span::before {
+    border-right: 1px solid #ddd;
+    color: #888;
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 0.5em;
+    padding: 0 0.5em;
+    text-align: right;
+    width: 22px;
+}
+
+#text-editor p {
+    font-weight: normal;
+}
