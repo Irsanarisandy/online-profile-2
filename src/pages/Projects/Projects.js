@@ -1,64 +1,59 @@
 import React from 'react';
 import styles from './styles';
+import { CustomCard } from '../../components/CustomCard';
 import wellness from '../../assets/wellness-shed.png';
 import aucs from '../../assets/aucs.png';
 import appetite from '../../assets/app-etite.png';
 import qwiky from '../../assets/qwiky.png';
 import eatMyApp from '../../assets/eat-my-app.png';
-import currency from '../../assets/currency-converter.png';
-import './styles.css';
+// import currency from '../../assets/currency-converter.png';
 
 const Projects = () => (
     <div style={styles.projectsContainer}>
-        <h3 style={styles.header}>Websites:</h3>
-        <div className="projects-web" style={styles.projectWeb}>
-            <a
-                href="https://www.thewellnessshed.co.nz/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={wellness} alt="The Wellness Shed" />
-            </a>
-            <a
-                href="http://aucs.azurewebsites.net/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={aucs} alt="Auckland University Compsci Society" />
-            </a>
-            <a
-                href="https://ooksei.github.io/Hackfest/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={appetite} alt="App-etite" />
-            </a>
-            <a
-                href="https://badboiz.github.io/frontend/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={qwiky} alt="Qwiky" />
-            </a>
-            <a
-                href="http://eatmyapp.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={eatMyApp} alt="Eat My App" />
-            </a>
+        <div>
+            <CustomCard
+                projectImage={wellness}
+                projectTitle="The Wellness Shed"
+                projectTech="Wordpress"
+                projectParagraph="Made a professional website with my teammates assigned during
+                MSA, for AUT Millennium, using WordPress. I particularly worked on displaying the
+                contents of the page (i.e. wording and displaying pictures)."
+                projectLink="https://www.thewellnessshed.co.nz/"
+            />
+            <CustomCard
+                projectImage={aucs}
+                projectTitle="Auckland University Compsci Society"
+                projectTech="Vanilla (No JavaScript Framework, plain HTML5, CSS3 &amp; JavaScript)"
+                projectParagraph="Made a website for AUCS, a university club."
+                projectLink="http://aucs.azurewebsites.net/index.html"
+            />
+            <CustomCard
+                projectImage={appetite}
+                projectTitle="app-etite"
+                projectTech="Vanilla for front-end, Node.js for back-end"
+                projectParagraph="As a front-end developer, I worked on the layout, map, and
+                displaying data from Yelp API."
+                projectLink="https://ooksei.github.io/Hackfest/"
+            />
+            <CustomCard
+                projectImage={qwiky}
+                projectTitle="Qwiky"
+                projectTech="React for front-end, Node.js for back-end, NoSQL for database"
+                projectParagraph="As a front-end developer, I worked on the map and getting
+                data to be transferred into the NoSQL database."
+                projectLink="https://badboiz.github.io/frontend/"
+            />
+            <CustomCard
+                projectImage={eatMyApp}
+                projectTitle="Eat My App"
+                projectTech="Vanilla for front-end, Node.js for back-end"
+                projectParagraph="I worked on the first page and cuisine page for front-end
+                and setting the route for Bing Image Search API for back-end. Our team won
+                the People’s Choice Award."
+                projectLink="http://eatmyapp.herokuapp.com/"
+            />
         </div>
-        <h3 style={styles.header}>Mobile Applications:</h3>
-        <div className="projects-mobile" style={styles.projectMobile}>
-            <a
-                href="https://expo.io/@irsanarisandy/currency-converter"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={currency} alt="Currency Converter" />
-            </a>
-        </div>
-        <h3 style={styles.header}>Others:</h3>
+        {/* <div></div> */}
         <p>
             Other projects are mentioned in the&nbsp;
             <a

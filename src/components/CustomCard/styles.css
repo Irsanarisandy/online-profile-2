@@ -1,0 +1,15 @@
+.customCard {
+    background-color: #003e6d !important;
+    color: #ffffff;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 750px) {
+    .customCard {
+        display: inline-block;
+        height: 525px;
+        margin: 10px;
+        width: 490px;
+    }
+}
