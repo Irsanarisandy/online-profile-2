@@ -2,20 +2,21 @@ import { Divider, IconButton } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { CustomLogo } from '../CustomLogo';
 import { EmailIcon, GitHubLogo, LinkedInLogo } from '../logos-and-icons';
 import styles from './styles';
+import './styles.css';
 
 const DrawerContent = ({ classes, toggleDrawer }) => (
-    <div style={styles.drawerContainer}>
-        <Link
+    <div>
+        <NavLink
             style={styles.logo}
             to="/"
             onClick={toggleDrawer ? toggleDrawer(false) : null}
         >
             <CustomLogo />
-        </Link>
+        </NavLink>
         <div style={styles.customTextContainer}>
             <p style={styles.custom1}>const&nbsp;</p>
             <p style={styles.custom2}>softwareDev</p>
@@ -26,32 +27,52 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
             <p style={styles.custom3}>;</p>
         </div>
         <Divider classes={{ root: classes.divider }} />
-        <Link to="/" onClick={toggleDrawer ? toggleDrawer(false) : null}>
-            <h3 style={styles.links}>ABOUT</h3>
-        </Link>
-        <Link to="/" onClick={toggleDrawer ? toggleDrawer(false) : null}>
-            <h3 style={styles.links}>PROJECTS</h3>
-        </Link>
-        <Link to="/contact" onClick={toggleDrawer ? toggleDrawer(false) : null}>
-            <h3 style={styles.links}>CONTACT</h3>
-        </Link>
+        <NavLink
+            exact
+            to="/"
+            activeStyle={styles.linksActive}
+            className="pageLinks"
+            style={styles.links}
+            onClick={toggleDrawer ? toggleDrawer(false) : null}
+        >
+            ABOUT
+        </NavLink>
+        <NavLink
+            exact
+            to="/"
+            activeStyle={styles.linksActive}
+            className="pageLinks"
+            style={styles.links}
+            onClick={toggleDrawer ? toggleDrawer(false) : null}
+        >
+            PROJECTS
+        </NavLink>
+        <NavLink
+            to="/contact"
+            activeStyle={styles.linksActive}
+            className="pageLinks"
+            style={styles.links}
+            onClick={toggleDrawer ? toggleDrawer(false) : null}
+        >
+            CONTACT
+        </NavLink>
         <div style={styles.iconContainer}>
             <IconButton
-                style={styles.links}
+                style={styles.iconLinks}
                 href="mailto:irsanarisandy@hotmail.com"
                 target="_blank"
             >
                 <EmailIcon />
             </IconButton>
             <IconButton
-                style={styles.links}
+                style={styles.iconLinks}
                 href="https://github.com/irsanarisandy"
                 target="_blank"
             >
                 <GitHubLogo />
             </IconButton>
             <IconButton
-                style={styles.links}
+                style={styles.iconLinks}
                 href="https://www.linkedin.com/in/irsan-arisandy"
                 target="_blank"
             >

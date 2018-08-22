@@ -18,9 +18,6 @@ export default {
         textAlign: 'center',
         width: drawerWidth
     },
-    drawerContainer: {
-        fontFamily: ['Oswald', 'sans-serif'].join(',')
-    },
     customTextContainer: {
         display: 'flex',
         justifyContent: 'center'
@@ -39,7 +36,14 @@ export default {
     },
     links: {
         color: '#FFFFFF',
-        padding: '20px 0 0'
+        display: 'block',
+        padding: 20
+    },
+    linksActive: {
+        backgroundColor: '#0C6195'
+    },
+    iconLinks: {
+        color: '#FFFFFF'
     },
     iconContainer: {
         bottom: 20,
