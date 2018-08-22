@@ -1,20 +1,11 @@
-.projectLinks div {
-    background-color: #ffea55;
-    transition: 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    z-index: 1;
+.projects-web a,
+.projects-web img {
+    width: 92%;
+    max-width: 500px;
 }
 
-.projectLinks:hover img {
-    opacity: 0.4;
-}
-
-.projectLinks:hover div {
-    opacity: 1;
+.projects-mobile a,
+.projects-mobile img {
+    width: 50%;
+    max-width: 200px;
 }
