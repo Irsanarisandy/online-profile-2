@@ -1,0 +1,20 @@
+.projectLinks div {
+    background-color: #ffea55;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.projectLinks:hover img {
+    opacity: 0.4;
+}
+
+.projectLinks:hover div {
+    opacity: 1;
+}

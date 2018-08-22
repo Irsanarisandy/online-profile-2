@@ -38,8 +38,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
             ABOUT
         </NavLink>
         <NavLink
-            exact
-            to="/"
+            to="/projects"
             activeStyle={styles.linksActive}
             className="pageLinks"
             style={styles.links}
