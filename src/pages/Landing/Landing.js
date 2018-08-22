@@ -3,7 +3,7 @@ import styles from './styles';
 import './styles.css';
 
 const Landing = () => (
-    <div id="text-editor" style={styles.mainContainer}>
+    <div id="text-editor">
         <pre>
             <span>
                 <p style={styles.custom1}>

@@ -1,3 +1,7 @@
+#text-editor {
+    margin: 40px;
+}
+
 #text-editor pre {
     background-color: #000000;
     box-shadow: 0.1em 0.1em 0.8em #6b6b6b;
@@ -29,4 +33,15 @@
 
 #text-editor p {
     font-weight: normal;
+}
+
+@media only screen and (max-width: 550px) {
+    #text-editor {
+        margin: 20px 15px;
+    }
+
+    #text-editor pre {
+        font-size: 14px;
+        min-width: 330px;
+    }
 }

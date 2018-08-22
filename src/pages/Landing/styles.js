@@ -1,7 +1,4 @@
 export default {
-    mainContainer: {
-        margin: 40
-    },
     custom1: {
         color: 'green'
     },
