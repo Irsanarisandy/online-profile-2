@@ -13,15 +13,13 @@ export default {
     },
     normalDrawer: {
         backgroundColor: '#003E6D',
+        boxShadow: '5px 0px 5px 0px #6B6B6B',
         position: 'fixed',
         textAlign: 'center',
         width: drawerWidth
     },
     drawerContainer: {
         fontFamily: ['Oswald', 'sans-serif'].join(',')
-    },
-    logo: {
-        textDecoration: 'none'
     },
     customTextContainer: {
         display: 'flex',
@@ -41,7 +39,7 @@ export default {
     },
     links: {
         color: '#FFFFFF',
-        textDecoration: 'none'
+        padding: '20px 0 0'
     },
     iconContainer: {
         bottom: 20,

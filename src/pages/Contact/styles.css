@@ -1,0 +1,9 @@
+.links svg {
+    font-size: 60px;
+}
+
+@media only screen and (min-width: 941px) {
+    #contactContainer {
+        margin: 150px 0 0 !important;
+    }
+}

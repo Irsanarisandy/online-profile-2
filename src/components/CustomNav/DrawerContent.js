@@ -26,26 +26,14 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
             <p style={styles.custom3}>;</p>
         </div>
         <Divider classes={{ root: classes.divider }} />
-        <Link
-            style={styles.links}
-            to="/"
-            onClick={toggleDrawer ? toggleDrawer(false) : null}
-        >
-            <h3>ABOUT</h3>
+        <Link to="/" onClick={toggleDrawer ? toggleDrawer(false) : null}>
+            <h3 style={styles.links}>ABOUT</h3>
         </Link>
-        <Link
-            style={styles.links}
-            to="/"
-            onClick={toggleDrawer ? toggleDrawer(false) : null}
-        >
-            <h3>PROJECTS</h3>
+        <Link to="/" onClick={toggleDrawer ? toggleDrawer(false) : null}>
+            <h3 style={styles.links}>PROJECTS</h3>
         </Link>
-        <Link
-            style={styles.links}
-            to="/"
-            onClick={toggleDrawer ? toggleDrawer(false) : null}
-        >
-            <h3>CONTACT</h3>
+        <Link to="/contact" onClick={toggleDrawer ? toggleDrawer(false) : null}>
+            <h3 style={styles.links}>CONTACT</h3>
         </Link>
         <div style={styles.iconContainer}>
             <IconButton

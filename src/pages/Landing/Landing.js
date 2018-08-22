@@ -23,14 +23,16 @@ const Landing = () => (
                 <p style={styles.custom2}>let&nbsp;</p>
                 <p style={styles.custom3}>coreSkills&nbsp;</p>
                 <p>= [</p>
+                <p style={styles.custom3}>React, React Native,</p>
+            </span>
+            <span>
                 <p style={styles.custom3}>
-                    React, React Native, JavaScript, HTML5, CSS3,
+                    &emsp;&emsp;JavaScript, HTML5, CSS3, Python,
                 </p>
             </span>
             <span>
                 <p style={styles.custom3}>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Python, Java, C#,
-                    PostgreSQL, MongoDB
+                    &emsp;&emsp;Java, C#, PostgreSQL, MongoDB
                 </p>
                 <p>];</p>
             </span>

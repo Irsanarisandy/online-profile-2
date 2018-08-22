@@ -7,8 +7,7 @@ export default {
     },
     layer1: {
         color: '#FFEA55',
-        fontSize: 70,
-        margin: 0
+        fontSize: 70
     },
     layer2: {
         color: 'transparent',
@@ -16,7 +15,6 @@ export default {
         '-webkit-text-stroke-width': 2,
         '-webkit-text-stroke-color': '#FFFFFF',
         fontSize: 70,
-        margin: 0,
         position: 'relative',
         top: 2,
         right: 49
