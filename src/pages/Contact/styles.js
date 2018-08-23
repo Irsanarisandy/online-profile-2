@@ -19,8 +19,5 @@ export default {
     text1: {
         color: '#0C6195',
         fontSize: 42
-    },
-    text2: {
-        color: '#0C6195'
     }
 };

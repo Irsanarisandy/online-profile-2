@@ -49,7 +49,6 @@ const Contact = () => (
                 <CVIcon />
             </a>
         </div>
-        <h2 style={styles.text2}>You know you want to ;)</h2>
     </div>
 );
 

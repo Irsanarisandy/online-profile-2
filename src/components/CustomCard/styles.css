@@ -5,6 +5,10 @@
     max-width: 500px;
 }
 
+.customCard a {
+    margin: 0 auto;
+}
+
 @media only screen and (min-width: 750px) {
     .customCard {
         display: inline-block;
