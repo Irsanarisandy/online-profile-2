@@ -7,13 +7,16 @@ const Landing = () => (
         <pre>
             <span>
                 <p style={styles.custom1}>
-                    &#47;&#47; Need an awesome software developer?
+                    &#47;&#47; Need an awesome software or web
                 </p>
+            </span>
+            <span>
+                <p style={styles.custom1}>&#47;&#47; developer?</p>
             </span>
             <span />
             <span>
                 <p style={styles.custom2}>const&nbsp;</p>
-                <p style={styles.custom3}>softwareDev&nbsp;</p>
+                <p style={styles.custom3}>ITDeveloper&nbsp;</p>
                 <p>=&nbsp;</p>
                 <p style={styles.custom4}>Irsan-Arisandy()</p>
                 <p>;</p>

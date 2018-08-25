@@ -10,13 +10,19 @@ const AppRouter = () => (
     <BrowserRouter>
         <div id="mainContainer">
             <CustomNav />
-            <div id="pageContent">
-                <Switch>
-                    <Route exact path="/" component={Landing} />
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/contact" component={Contact} />
-                    <Redirect from="*" to="/" />
-                </Switch>
+            <div id="currentPage">
+                <main id="pageContent">
+                    <Switch>
+                        <Route exact path="/" component={Landing} />
+                        <Route path="/projects" component={Projects} />
+                        <Route path="/contact" component={Contact} />
+                        <Redirect from="*" to="/" />
+                    </Switch>
+                </main>
+                <footer>
+                    Irsan Arisandy &#169; {new Date().getFullYear()}. Made using
+                    React.
+                </footer>
             </div>
         </div>
     </BrowserRouter>

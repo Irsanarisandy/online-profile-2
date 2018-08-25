@@ -15,15 +15,45 @@ a {
     text-decoration: none;
 }
 
+footer {
+    color: #0c6195;
+    margin: 10px 20px;
+}
+
+#currentPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#pageContent {
+    flex: 1;
+    width: 100%;
+}
+
+@media only screen and (min-width: 520px) {
+    footer {
+        margin: 10px 40px;
+    }
+}
+
 /* don't forget to set min-width of Contact in styles.css and minWidth of CustomNav.js */
 @media only screen and (min-width: 750px) {
     #mainContainer {
         display: flex;
     }
 
+    #currentPage {
+        width: calc(100% - 190px);
+    }
+
     /* don't forget to set drawerWidth in styles of CustomNav */
     #pageContent {
         margin-left: 190px;
-        width: 100%;
+    }
+
+    /* footer has 40px more margin-left than pageContent */
+    footer {
+        margin-left: 230px;
     }
 }

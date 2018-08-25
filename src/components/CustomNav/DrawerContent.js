@@ -19,7 +19,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         </NavLink>
         <div style={styles.customTextContainer}>
             <p style={styles.custom1}>const&nbsp;</p>
-            <p style={styles.custom2}>softwareDev</p>
+            <p style={styles.custom2}>ITDeveloper</p>
         </div>
         <div style={styles.customTextContainer}>
             <p style={styles.custom3}>=&nbsp;</p>

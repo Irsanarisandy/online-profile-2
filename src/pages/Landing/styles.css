@@ -11,7 +11,7 @@
     font-size: 20px;
     font-weight: bold;
     padding: 7px 0;
-    min-width: 470px;
+    min-width: 445px;
     width: 100%;
 }
 
@@ -35,7 +35,7 @@
     font-weight: normal;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 520px) {
     #text-editor {
         margin: 20px 15px;
     }

@@ -9,7 +9,7 @@ import eatMyApp from '../../assets/eat-my-app.png';
 // import currency from '../../assets/currency-converter.png';
 
 const Projects = () => (
-    <div style={styles.projectsContainer}>
+    <div id="projectsContainer" style={styles.projectsContainer}>
         <div>
             <CustomCard
                 projectImage={wellness}
@@ -54,7 +54,7 @@ const Projects = () => (
             />
         </div>
         {/* <div></div> */}
-        <p>
+        <p style={styles.text}>
             Other projects are mentioned in the&nbsp;
             <a
                 href="https://www.dropbox.com/s/npvzonzakkjqsbc/CV.pdf?dl=0"
