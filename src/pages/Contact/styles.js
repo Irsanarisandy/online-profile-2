@@ -4,17 +4,7 @@ export default {
         textAlign: 'center'
     },
     linkContainer: {
-        margin: '10px 0 5px',
-        width: '100%'
-    },
-    links: {
-        backgroundColor: '#0C6195',
-        borderStyle: 'solid',
-        borderWidth: 2,
-        color: '#FFFFFF',
-        display: 'inline-flex',
-        margin: 10,
-        padding: 50
+        margin: '10px 0 5px'
     },
     text1: {
         color: '#0C6195',

@@ -1,4 +1,9 @@
-.links svg {
+#contactLinkContainer a {
+    margin: 12px;
+    padding: 50px;
+}
+
+#contactLinkContainer svg {
     font-size: 60px;
 }
 
