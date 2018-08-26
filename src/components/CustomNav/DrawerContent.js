@@ -86,9 +86,7 @@ DrawerContent.defaultProps = {
 };
 
 DrawerContent.propTypes = {
-    classes: PropTypes.shape({
-        divider: PropTypes.object
-    }),
+    classes: PropTypes.shape(),
     toggleDrawer: PropTypes.func
 };
 

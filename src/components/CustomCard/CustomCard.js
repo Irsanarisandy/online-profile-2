@@ -46,11 +46,8 @@ CustomCard.defaultProps = {
 };
 
 CustomCard.propTypes = {
-    classes: PropTypes.shape({
-        cardActions: PropTypes.object,
-        divider: PropTypes.object
-    }),
-    projectImage: PropTypes.element.isRequired,
+    classes: PropTypes.shape(),
+    projectImage: PropTypes.string.isRequired,
     projectTitle: PropTypes.string.isRequired,
     projectTech: PropTypes.string.isRequired,
     projectParagraph: PropTypes.string.isRequired,

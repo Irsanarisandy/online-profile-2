@@ -11,9 +11,9 @@ export default {
     },
     layer2: {
         color: 'transparent',
-        '-webkit-text-fill-color': 'transparent',
-        '-webkit-text-stroke-width': 2,
-        '-webkit-text-stroke-color': '#FFFFFF',
+        WebkitTextFillColor: 'transparent',
+        WebkitTextStrokeWidth: 2,
+        WebkitTextStrokeColor: '#FFFFFF',
         fontSize: 70,
         position: 'relative',
         top: 2,

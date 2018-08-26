@@ -77,10 +77,7 @@ CustomNav.defaultProps = {
 };
 
 CustomNav.propTypes = {
-    classes: PropTypes.shape({
-        normalDrawer: PropTypes.object,
-        swipeableDrawer: PropTypes.object
-    })
+    classes: PropTypes.shape()
 };
 
 export default withStyles(styles)(CustomNav);
