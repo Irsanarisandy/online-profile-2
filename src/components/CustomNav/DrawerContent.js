@@ -28,8 +28,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         </div>
         <Divider classes={{ root: classes.divider }} />
         <NavLink
-            exact
-            to="/"
+            to="/about"
             activeStyle={styles.linksActive}
             className="pageLinks"
             style={styles.links}

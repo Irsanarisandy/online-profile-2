@@ -54,6 +54,6 @@ footer {
 
     /* footer has 40px more margin-left than pageContent */
     footer {
-        margin-left: 230px;
+        margin: 20px 0 10px 230px;
     }
 }

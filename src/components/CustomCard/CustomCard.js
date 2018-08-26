@@ -29,7 +29,12 @@ const CustomCard = ({
             <p style={styles.projectDetail}>{projectParagraph}</p>
         </CardContent>
         <CardActions className={classes.cardActions}>
-            <Button variant="outlined" href={projectLink} style={styles.button}>
+            <Button
+                variant="outlined"
+                href={projectLink}
+                target="_blank"
+                style={styles.button}
+            >
                 Go to site
             </Button>
         </CardActions>
