@@ -15,10 +15,12 @@
         "react/prefer-stateless-function": [1],
         "arrow-parens": "off",
         "comma-dangle": "off",
-        "indent": ["error", 4],
+        "indent": ["warn", 4],
         "linebreak-style": "off",
         "max-len": "off",
         "no-unused-vars": "warn",
-        "object-curly-newline": "off"
+        "object-curly-newline": "off",
+        "operator-linebreak": "off",
+        "prefer-const": "off"
     }
 }

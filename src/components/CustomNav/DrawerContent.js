@@ -2,6 +2,7 @@ import { Divider, IconButton } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import React from 'react';
+import MediaQuery from 'react-responsive';
 import { NavLink } from 'react-router-dom';
 import { CustomLogo } from '../CustomLogo';
 import { EmailIcon, GitHubLogo, LinkedInLogo } from '../logos-and-icons';
@@ -45,6 +46,17 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         >
             PROJECTS
         </NavLink>
+        <MediaQuery minWidth={830}>
+            <NavLink
+                to="/games"
+                activeStyle={styles.linksActive}
+                className="pageLinks"
+                style={styles.links}
+                onClick={toggleDrawer ? toggleDrawer(false) : null}
+            >
+                GAMES
+            </NavLink>
+        </MediaQuery>
         <NavLink
             to="/contact"
             activeStyle={styles.linksActive}
