@@ -15,6 +15,7 @@ export default {
     },
     buttonStyle: {
         color: '#003E6D',
+        fontSize: 20,
         margin: '20px 7px 0'
     },
     skyColor: 'deepskyblue',
