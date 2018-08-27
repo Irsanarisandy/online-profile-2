@@ -2,7 +2,7 @@
     margin: 40px;
 }
 
-#text-editor pre {
+.typing-landing {
     background-color: #000000;
     box-shadow: 0.1em 0.1em 0.8em #6b6b6b;
     color: #ffffff;
@@ -15,12 +15,12 @@
     width: 100%;
 }
 
-#text-editor span {
+.typing-landing-content {
     display: flex;
     line-height: 1.5rem;
 }
 
-#text-editor span::before {
+.typing-landing-content::before {
     border-right: 1px solid #ddd;
     color: #888;
     content: counter(line);
@@ -31,7 +31,7 @@
     width: 22px;
 }
 
-#text-editor p {
+.typing-landing-content p {
     font-weight: normal;
 }
 
@@ -40,7 +40,7 @@
         margin: 20px 15px;
     }
 
-    #text-editor pre {
+    .typing-landing {
         font-size: 14px;
         min-width: 330px;
     }

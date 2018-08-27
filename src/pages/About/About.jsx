@@ -12,7 +12,7 @@ const About = () => (
         <div style={styles.headContainer}>
             <img style={styles.image} src={dp} alt="dp" />
             <h1>IRSAN ARISANDY</h1>
-            <Typing className="typing" loop>
+            <Typing className="typing-about" loop>
                 <span>Web Developer</span>
                 <Typing.Backspace count={13} delay={2000} />
                 <span>Software Developer</span>
