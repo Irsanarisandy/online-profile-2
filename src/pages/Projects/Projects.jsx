@@ -9,7 +9,7 @@ import eatMyApp from '../../assets/eat-my-app.png';
 // import currency from '../../assets/currency-converter.png';
 
 const Projects = () => (
-    <div id="projectsContainer" style={styles.projectsContainer}>
+    <div id="projects-container" style={styles.projectsContainer}>
         <div>
             <CustomCard
                 projectImage={wellness}

@@ -8,7 +8,7 @@ import styles from './styles';
 import './styles.css';
 
 const About = () => (
-    <div id="aboutContainer" style={styles.mainContainer}>
+    <div id="about-container" style={styles.mainContainer}>
         <div style={styles.headContainer}>
             <img style={styles.image} src={dp} alt="dp" />
             <h1>IRSAN ARISANDY</h1>

@@ -6,6 +6,7 @@ import {
     DialogContentText,
     DialogActions
 } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import { Help, Restore } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -48,9 +49,9 @@ Grid.propTypes = {
     grid: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
 };
 
-export default class FlappyBird extends React.Component {
-    constructor() {
-        super();
+class FlappyBird extends React.Component {
+    constructor(props) {
+        super(props);
         this.gameHeight = 20;
         this.gameWidth = 30;
         this.birdInitHeight = 10;
@@ -240,6 +241,7 @@ export default class FlappyBird extends React.Component {
 
     render() {
         let { crashed, grid, open, score } = this.state;
+        let { classes } = this.props;
 
         return (
             <div id="flappy-bird">
@@ -260,16 +262,25 @@ export default class FlappyBird extends React.Component {
                     &nbsp;How To Play
                 </Button>
                 <Dialog open={open} onClose={this.handleClose}>
-                    <DialogTitle>How To Play:</DialogTitle>
+                    <DialogTitle>
+                        <span style={mainStyles.dialogHeader}>
+                            How To Play:
+                        </span>
+                    </DialogTitle>
                     <DialogContent>
-                        <DialogContentText>
+                        <DialogContentText className={classes.dialogText}>
                             Simply left click on the game, or press space, to
                             fly up. The aim of the game is to avoid as many of
                             the towers as possible.
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                        <Button onClick={this.handleClose}>Close</Button>
+                        <Button
+                            style={mainStyles.dialogButton}
+                            onClick={this.handleClose}
+                        >
+                            Close
+                        </Button>
                     </DialogActions>
                 </Dialog>
                 {crashed ? (
@@ -285,3 +296,13 @@ export default class FlappyBird extends React.Component {
         );
     }
 }
+
+FlappyBird.defaultProps = {
+    classes: null
+};
+
+FlappyBird.propTypes = {
+    classes: PropTypes.shape()
+};
+
+export default withStyles(mainStyles)(FlappyBird);

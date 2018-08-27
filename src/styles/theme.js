@@ -9,8 +9,5 @@ export default createMuiTheme({
         secondary: {
             main: '#FFEA55'
         }
-    },
-    typography: {
-        fontFamily: ['Oswald', 'Arvo', 'sans-serif'].join(',')
     }
 });

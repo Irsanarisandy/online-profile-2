@@ -20,7 +20,7 @@ const CustomCard = ({
     projectParagraph,
     projectLink
 }) => (
-    <Card className="customCard">
+    <Card className="custom-card">
         <CardMedia component="img" image={projectImage} title={projectTitle} />
         <CardContent>
             <h2 style={styles.cardHeader}>{projectTitle}</h2>

@@ -3,7 +3,7 @@ import { FlappyBird } from '../../components/FlappyBird';
 import styles from './styles';
 
 const Games = () => (
-    <div id="gamesContainer" style={styles.mainContainer}>
+    <div id="games-container" style={styles.mainContainer}>
         <FlappyBird />
     </div>
 );

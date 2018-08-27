@@ -1,15 +1,15 @@
-#contactLinkContainer a {
+#contact-link-container a {
     margin: 12px;
     padding: 50px;
 }
 
-#contactLinkContainer svg {
+#contact-link-container svg {
     font-size: 60px;
 }
 
 /* don't forget to set min-width of PageContent in main.css and minWidth of CustomNav.js */
 @media only screen and (min-width: 750px) {
-    #contactContainer {
+    #contact-container {
         margin: 150px 0 0 !important;
     }
 }

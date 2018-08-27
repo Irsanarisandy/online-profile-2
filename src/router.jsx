@@ -10,10 +10,10 @@ import './styles/main.css';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div id="mainContainer">
+        <div id="main-container">
             <CustomNav />
-            <div id="currentPage">
-                <main id="pageContent">
+            <div id="current-page">
+                <main id="page-content">
                     <Switch>
                         <Route exact path="/" component={Landing} />
                         <Route path="/about" component={About} />

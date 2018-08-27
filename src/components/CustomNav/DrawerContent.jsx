@@ -31,7 +31,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         <NavLink
             to="/about"
             activeStyle={styles.linksActive}
-            className="pageLinks"
+            className="page-links"
             style={styles.links}
             onClick={toggleDrawer ? toggleDrawer(false) : null}
         >
@@ -40,7 +40,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         <NavLink
             to="/projects"
             activeStyle={styles.linksActive}
-            className="pageLinks"
+            className="page-links"
             style={styles.links}
             onClick={toggleDrawer ? toggleDrawer(false) : null}
         >
@@ -50,7 +50,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
             <NavLink
                 to="/games"
                 activeStyle={styles.linksActive}
-                className="pageLinks"
+                className="page-links"
                 style={styles.links}
                 onClick={toggleDrawer ? toggleDrawer(false) : null}
             >
@@ -60,7 +60,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         <NavLink
             to="/contact"
             activeStyle={styles.linksActive}
-            className="pageLinks"
+            className="page-links"
             style={styles.links}
             onClick={toggleDrawer ? toggleDrawer(false) : null}
         >

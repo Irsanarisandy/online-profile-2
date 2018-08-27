@@ -21,6 +21,7 @@ export default {
     },
     button: {
         borderColor: '#0C6195',
-        color: '#0C6195'
+        color: '#0C6195',
+        fontFamily: ['Oswald', 'sans-serif'].join(',')
     }
 };
