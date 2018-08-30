@@ -8,11 +8,11 @@ const Landing = () => (
         <Typing className="typing-landing">
             <span className="typing-landing-content">
                 <p style={styles.custom1}>
-                    &#47;&#47; Need an awesome software or web
+                    {'// Need an awesome software or web'}
                 </p>
             </span>
             <span className="typing-landing-content">
-                <p style={styles.custom1}>&#47;&#47; developer?</p>
+                <p style={styles.custom1}>{'// developer?'}</p>
             </span>
             <span className="typing-landing-content">&nbsp;</span>
             <Typing.Delay ms={2000} />
@@ -52,7 +52,8 @@ const Landing = () => (
             </span>
             <span className="typing-landing-content">
                 <p style={styles.custom1}>
-                    &emsp;&emsp;&#47;&#47; Possibilities awaits
+                    &emsp;&emsp;
+                    {'// Possibilities awaits'}
                 </p>
             </span>
             <span className="typing-landing-content">

@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
+import { CVIcon, EmailIcon } from '../../components/logos-and-icons';
 import styles from './styles';
 
 const Blurb = () => (
@@ -29,14 +30,23 @@ const Blurb = () => (
         </p>
         <br />
         <p>I hope to hear from you!</p>
-        <br />
+        <Button
+            variant="outlined"
+            href="mailto:irsanarisandy@hotmail.com"
+            target="_blank"
+            style={styles.button}
+        >
+            <EmailIcon />
+            &ensp;Email Me
+        </Button>
         <Button
             variant="outlined"
             href="https://www.dropbox.com/s/npvzonzakkjqsbc/CV.pdf?dl=0"
             target="_blank"
             style={styles.button}
         >
-            Download my CV
+            <CVIcon />
+            &ensp;Download My CV
         </Button>
     </div>
 );
