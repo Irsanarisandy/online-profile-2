@@ -10,44 +10,8 @@ import { withStyles } from '@material-ui/core/styles';
 import { Help, Restore } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 import React from 'react';
-import mainStyles from './styles';
-
-const GridCell = ({ cell }) => {
-    const style = {
-        ...mainStyles.gridCell,
-        backgroundColor: cell
-    };
-
-    return <div style={style} />;
-};
-
-GridCell.propTypes = {
-    cell: PropTypes.string.isRequired
-};
-
-const GridRow = ({ row }) => (
-    <div style={mainStyles.gridRow}>
-        {row.map((cell, index) => (
-            <GridCell cell={cell} key={`c${index.toString()}`} />
-        ))}
-    </div>
-);
-
-GridRow.propTypes = {
-    row: PropTypes.arrayOf(PropTypes.string).isRequired
-};
-
-const Grid = ({ grid }) => (
-    <div style={mainStyles.grid}>
-        {grid.map((row, index) => (
-            <GridRow row={row} key={`r${index.toString()}`} />
-        ))}
-    </div>
-);
-
-Grid.propTypes = {
-    grid: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
-};
+import { Grid } from '../Grid';
+import styles from './styles';
 
 class FlappyBird extends React.Component {
     constructor(props) {
@@ -66,11 +30,9 @@ class FlappyBird extends React.Component {
         let grid = [];
         for (let i = 0; i < this.gameHeight; i += 1) {
             if (i < this.gameHeight - 5) {
-                grid.push(new Array(this.gameWidth).fill(mainStyles.skyColor));
+                grid.push(new Array(this.gameWidth).fill(styles.skyColor));
             } else {
-                grid.push(
-                    new Array(this.gameWidth).fill(mainStyles.groundColor)
-                );
+                grid.push(new Array(this.gameWidth).fill(styles.groundColor));
             }
         }
 
@@ -105,7 +67,7 @@ class FlappyBird extends React.Component {
             height: this.birdInitHeight,
             position: this.birdPosition
         };
-        grid[bird.height][bird.position] = mainStyles.birdColor;
+        grid[bird.height][bird.position] = styles.birdColor;
 
         this.state = {
             grid,
@@ -131,11 +93,11 @@ class FlappyBird extends React.Component {
             for (let i = 0; i < this.gameHeight; i += 1) {
                 if (i < this.gameHeight - 5) {
                     gridCopy.push(
-                        new Array(this.gameWidth).fill(mainStyles.skyColor)
+                        new Array(this.gameWidth).fill(styles.skyColor)
                     );
                 } else {
                     gridCopy.push(
-                        new Array(this.gameWidth).fill(mainStyles.groundColor)
+                        new Array(this.gameWidth).fill(styles.groundColor)
                     );
                 }
             }
@@ -162,10 +124,9 @@ class FlappyBird extends React.Component {
                     if (towersCopy[i].onground) {
                         gridCopy[this.gameHeight - j - 1][
                             towersCopy[i].position
-                        ] = mainStyles.towerColor;
+                        ] = styles.towerColor;
                     } else {
-                        gridCopy[j][towersCopy[i].position] =
-                            mainStyles.towerColor;
+                        gridCopy[j][towersCopy[i].position] = styles.towerColor;
                     }
                 }
             }
@@ -177,7 +138,7 @@ class FlappyBird extends React.Component {
                 birdCopy.height < 0 || birdCopy.height > this.gameHeight - 1;
             let reachedTower = false;
             for (let i = 0; i < this.gameHeight; i += 1) {
-                if (gridCopy[i][this.birdPosition] === mainStyles.towerColor) {
+                if (gridCopy[i][this.birdPosition] === styles.towerColor) {
                     reachedTower = true;
 
                     if (birdCopy.height === i) {
@@ -191,7 +152,7 @@ class FlappyBird extends React.Component {
                 this.setState({ score: score + 1 });
             }
 
-            gridCopy[birdCopy.height][birdCopy.position] = mainStyles.birdColor;
+            gridCopy[birdCopy.height][birdCopy.position] = styles.birdColor;
 
             this.setState({
                 grid: gridCopy,
@@ -245,7 +206,7 @@ class FlappyBird extends React.Component {
 
         return (
             <div id="flappy-bird">
-                <h3 style={mainStyles.score}>{score}</h3>
+                <h3 style={styles.score}>{score}</h3>
                 <div
                     onClick={this.handleClick}
                     onKeyPress={this.handleSpace}
@@ -254,18 +215,13 @@ class FlappyBird extends React.Component {
                 >
                     <Grid grid={grid} />
                 </div>
-                <Button
-                    onClick={this.handleOpen}
-                    style={mainStyles.buttonStyle}
-                >
+                <Button onClick={this.handleOpen} style={styles.buttonStyle}>
                     <Help />
                     &nbsp;How To Play
                 </Button>
                 <Dialog open={open} onClose={this.handleClose}>
                     <DialogTitle>
-                        <span style={mainStyles.dialogHeader}>
-                            How To Play:
-                        </span>
+                        <span style={styles.dialogHeader}>How To Play:</span>
                     </DialogTitle>
                     <DialogContent>
                         <DialogContentText className={classes.dialogText}>
@@ -276,7 +232,7 @@ class FlappyBird extends React.Component {
                     </DialogContent>
                     <DialogActions>
                         <Button
-                            style={mainStyles.dialogButton}
+                            style={styles.dialogButton}
                             onClick={this.handleClose}
                         >
                             Close
@@ -284,10 +240,7 @@ class FlappyBird extends React.Component {
                     </DialogActions>
                 </Dialog>
                 {crashed ? (
-                    <Button
-                        onClick={this.restart}
-                        style={mainStyles.buttonStyle}
-                    >
+                    <Button onClick={this.restart} style={styles.buttonStyle}>
                         <Restore />
                         &nbsp;Restart
                     </Button>
@@ -305,4 +258,4 @@ FlappyBird.propTypes = {
     classes: PropTypes.shape()
 };
 
-export default withStyles(mainStyles)(FlappyBird);
+export default withStyles(styles)(FlappyBird);
