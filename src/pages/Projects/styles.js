@@ -1,6 +1,6 @@
 export default {
     projectsContainer: {
-        margin: 20,
+        margin: '20px 20px 0',
         textAlign: 'center'
     },
     text: {

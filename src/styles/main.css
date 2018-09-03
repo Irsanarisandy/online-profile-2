@@ -23,7 +23,7 @@ footer {
 #current-page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 104px);
 }
 
 #page-content {
@@ -44,6 +44,7 @@ footer {
     }
 
     #current-page {
+        min-height: 100vh;
         width: calc(100% - 190px);
     }
 

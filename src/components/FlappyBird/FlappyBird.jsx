@@ -180,7 +180,8 @@ class FlappyBird extends React.Component {
 
     handleSpace = event => {
         event.preventDefault();
-        if (event.keyCode === 32) {
+        // older browsers returns 'Spacebar'
+        if (event.key === ' ' || event.key === 'Spacebar') {
             this.handleClick(event);
         }
     };

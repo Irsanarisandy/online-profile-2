@@ -46,7 +46,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         >
             PROJECTS
         </NavLink>
-        <MediaQuery minWidth={830}>
+        <MediaQuery minWidth={830} minHeight={618}>
             <NavLink
                 to="/games"
                 activeStyle={styles.linksActive}
@@ -66,29 +66,31 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         >
             CONTACT
         </NavLink>
-        <div style={styles.iconContainer}>
-            <IconButton
-                style={styles.iconLinks}
-                href="mailto:irsanarisandy@hotmail.com"
-                target="_blank"
-            >
-                <EmailIcon />
-            </IconButton>
-            <IconButton
-                style={styles.iconLinks}
-                href="https://github.com/irsanarisandy"
-                target="_blank"
-            >
-                <GitHubLogo />
-            </IconButton>
-            <IconButton
-                style={styles.iconLinks}
-                href="https://www.linkedin.com/in/irsan-arisandy"
-                target="_blank"
-            >
-                <LinkedInLogo />
-            </IconButton>
-        </div>
+        <MediaQuery minHeight={450}>
+            <div style={styles.iconContainer}>
+                <IconButton
+                    style={styles.iconLinks}
+                    href="mailto:irsanarisandy@hotmail.com"
+                    target="_blank"
+                >
+                    <EmailIcon />
+                </IconButton>
+                <IconButton
+                    style={styles.iconLinks}
+                    href="https://github.com/irsanarisandy"
+                    target="_blank"
+                >
+                    <GitHubLogo />
+                </IconButton>
+                <IconButton
+                    style={styles.iconLinks}
+                    href="https://www.linkedin.com/in/irsan-arisandy"
+                    target="_blank"
+                >
+                    <LinkedInLogo />
+                </IconButton>
+            </div>
+        </MediaQuery>
     </div>
 );
 
