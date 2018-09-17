@@ -16,6 +16,7 @@ import styles from './styles';
 class FlappyBird extends React.Component {
     constructor(props) {
         super(props);
+        this.flappyGame = React.createRef();
         this.gameHeight = 20;
         this.gameWidth = 30;
         this.birdInitHeight = 10;
@@ -75,12 +76,14 @@ class FlappyBird extends React.Component {
             bird,
             crashed: false,
             score: 0,
-            open: false
+            openDialog: false
         };
     }
 
     componentDidMount() {
         document.addEventListener('keydown', this.handleSpace, false);
+
+        this.flappyGame.current.focus();
 
         this.timerID = setInterval(() => {
             let { bird, crashed, score, towers } = this.state;
@@ -180,7 +183,7 @@ class FlappyBird extends React.Component {
 
     handleSpace = event => {
         event.preventDefault();
-        // older browsers returns 'Spacebar'
+        // older browsers return 'Spacebar'
         if (event.key === ' ' || event.key === 'Spacebar') {
             this.handleClick(event);
         }
@@ -191,18 +194,19 @@ class FlappyBird extends React.Component {
         let birdCopy = bird;
         birdCopy.height = this.birdInitHeight;
         this.setState({ crashed: false, bird: birdCopy, score: 0 });
+        this.flappyGame.current.focus();
     };
 
     handleOpen = () => {
-        this.setState({ open: true });
+        this.setState({ openDialog: true });
     };
 
     handleClose = () => {
-        this.setState({ open: false });
+        this.setState({ openDialog: false });
     };
 
     render() {
-        let { crashed, grid, open, score } = this.state;
+        let { crashed, grid, openDialog, score } = this.state;
         let { classes } = this.props;
 
         return (
@@ -213,6 +217,7 @@ class FlappyBird extends React.Component {
                     onKeyPress={this.handleSpace}
                     role="button"
                     tabIndex={0}
+                    ref={this.flappyGame}
                 >
                     <Grid grid={grid} />
                 </div>
@@ -220,7 +225,7 @@ class FlappyBird extends React.Component {
                     <Help />
                     &nbsp;How To Play
                 </Button>
-                <Dialog open={open} onClose={this.handleClose}>
+                <Dialog open={openDialog} onClose={this.handleClose}>
                     <DialogTitle>
                         <span style={styles.dialogHeader}>How To Play:</span>
                     </DialogTitle>

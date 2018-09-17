@@ -171,7 +171,7 @@ class Snakes extends React.Component {
 
             if (!snakeDied && snakeNewBody.length > 4) {
                 snakeDied = this.checkContainPos(
-                    snakeNewBody.slice(0, snakeNewBody.length - 2),
+                    snakeNewBody.slice(0, snakeNewBody.length - 4),
                     headPos
                 );
             }
@@ -227,11 +227,11 @@ class Snakes extends React.Component {
     };
 
     restart = () => {
-        let snakeCopy = {
+        let newSnake = {
             body: this.snakeInitBody,
             direction: this.snakeInitDirection
         };
-        this.setState({ died: false, snake: snakeCopy, score: 0 });
+        this.setState({ died: false, snake: newSnake, score: 0 });
         this.snakeGame.current.focus();
     };
 
