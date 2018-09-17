@@ -19,6 +19,7 @@
         "indent": ["warn", 4],
         "linebreak-style": "off",
         "max-len": "off",
+        "no-restricted-syntax": "warn",
         "no-unused-vars": "warn",
         "object-curly-newline": "off",
         "operator-linebreak": "off",
