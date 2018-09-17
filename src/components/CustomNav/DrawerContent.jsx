@@ -46,7 +46,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         >
             PROJECTS
         </NavLink>
-        <MediaQuery minWidth={830} minHeight={618}>
+        <MediaQuery minWidth={830} minHeight={630}>
             <NavLink
                 to="/games"
                 activeStyle={styles.linksActive}
