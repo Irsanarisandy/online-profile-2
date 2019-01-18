@@ -14,7 +14,7 @@ const About = () => (
             <h1>IRSAN ARISANDY</h1>
             <Typing className="typing-about" loop>
                 <span>Web Developer</span>
-                <Typing.Backspace count={13} delay={2000} />
+                <Typing.Backspace count={14} delay={2000} />
                 <span>Software Developer</span>
                 <Typing.Backspace count={18} delay={2000} />
             </Typing>

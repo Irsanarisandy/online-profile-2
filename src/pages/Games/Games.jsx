@@ -5,9 +5,12 @@ import { Snakes } from '../../components/Snakes';
 import styles from './styles';
 
 class Games extends React.Component {
-    state = {
-        value: 0
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 0
+        };
+    }
 
     handleChange = (event, value) => {
         this.setState({ value });
