@@ -69,6 +69,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
         <MediaQuery minHeight={450}>
             <div style={styles.iconContainer}>
                 <IconButton
+                    aria-label="Email"
                     style={styles.iconLinks}
                     href="mailto:irsanarisandy@hotmail.com"
                     target="_blank"
@@ -76,6 +77,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
                     <EmailIcon />
                 </IconButton>
                 <IconButton
+                    aria-label="GitHub"
                     style={styles.iconLinks}
                     href="https://github.com/irsanarisandy"
                     target="_blank"
@@ -83,6 +85,7 @@ const DrawerContent = ({ classes, toggleDrawer }) => (
                     <GitHubLogo />
                 </IconButton>
                 <IconButton
+                    aria-label="LinkedIn"
                     style={styles.iconLinks}
                     href="https://www.linkedin.com/in/irsan-arisandy"
                     target="_blank"

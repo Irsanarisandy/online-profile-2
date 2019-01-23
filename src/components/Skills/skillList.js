@@ -10,7 +10,7 @@ const skillList = {
         },
         {
             skill: 'Vue',
-            percentage: 70
+            percentage: 75
         },
         {
             skill: 'JavaScript / TypeScript',
@@ -21,8 +21,8 @@ const skillList = {
             percentage: 85
         },
         {
-            skill: 'Flutter',
-            percentage: 50
+            skill: 'SilverStripe CMS',
+            percentage: 65
         }
     ],
     general: [
@@ -32,15 +32,15 @@ const skillList = {
         },
         {
             skill: 'Java',
-            percentage: 70
+            percentage: 65
         },
         {
             skill: 'C#',
-            percentage: 70
+            percentage: 65
         },
         {
-            skill: 'Dart',
-            percentage: 40
+            skill: 'PHP',
+            percentage: 60
         }
     ],
     database: [
@@ -54,29 +54,27 @@ const skillList = {
         },
         {
             skill: 'MongoDB',
-            percentage: 70
+            percentage: 60
         }
     ],
     others: [
         {
-            skill: 'Git',
-            percentage: 80
+            skill: 'Git'
         },
         {
-            skill: 'Photoshop',
-            percentage: 50
+            skill: 'Agile Methodology'
         },
         {
-            skill: 'Microsoft Word',
-            percentage: 95
+            skill: 'Teamwork'
         },
         {
-            skill: 'Microsoft Excel',
-            percentage: 90
+            skill: 'Collaboration'
         },
         {
-            skill: 'Microsoft Powerpoint',
-            percentage: 85
+            skill: 'Continuous Learner'
+        },
+        {
+            skill: 'Result Driven'
         }
     ]
 };

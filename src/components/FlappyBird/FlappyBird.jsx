@@ -213,6 +213,7 @@ class FlappyBird extends React.Component {
             <div id="flappy-bird">
                 <h3 style={styles.score}>{score}</h3>
                 <div
+                    aria-label="Flappy Bird Game"
                     onClick={this.handleClick}
                     onKeyPress={this.handleSpace}
                     role="button"

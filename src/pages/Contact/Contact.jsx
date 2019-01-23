@@ -14,6 +14,7 @@ const Contact = () => (
             <h1 style={styles.text1}>CONTACT ME!</h1>
             <div id="contact-link-container" style={styles.linkContainer}>
                 <a
+                    aria-label="Email"
                     style={styles.links}
                     href="mailto:irsanarisandy@hotmail.com"
                     target="_blank"
@@ -22,6 +23,7 @@ const Contact = () => (
                     <EmailIcon />
                 </a>
                 <a
+                    aria-label="GitHub"
                     style={styles.links}
                     href="https://github.com/irsanarisandy"
                     target="_blank"
@@ -30,6 +32,7 @@ const Contact = () => (
                     <GitHubLogo />
                 </a>
                 <a
+                    aria-label="LinkedIn"
                     style={styles.links}
                     href="https://www.linkedin.com/in/irsan-arisandy"
                     target="_blank"
@@ -38,6 +41,7 @@ const Contact = () => (
                     <LinkedInLogo />
                 </a>
                 <a
+                    aria-label="Dropbox"
                     style={styles.links}
                     href="https://www.dropbox.com/s/npvzonzakkjqsbc/CV.pdf?dl=0"
                     target="_blank"

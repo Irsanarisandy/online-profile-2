@@ -251,6 +251,7 @@ class Snakes extends React.Component {
             <div id="snake-game">
                 <h3 style={styles.score}>{score}</h3>
                 <div
+                    aria-label="Snakes Game"
                     onKeyDown={this.handleKeyDown}
                     role="button"
                     tabIndex={0}

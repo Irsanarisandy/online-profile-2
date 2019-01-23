@@ -24,7 +24,7 @@ const AppRouter = () => (
                     </Switch>
                 </main>
                 <footer>
-                    Irsan Arisandy &#169; {new Date().getFullYear()}. Made using
+                    Irsan Arisandy &#169; {new Date().getFullYear()}. Made in
                     React.
                 </footer>
             </div>
