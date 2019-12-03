@@ -57,7 +57,7 @@ const Projects = () => (
         <p style={styles.text}>
             Other projects are mentioned in the&nbsp;
             <a
-                href="https://www.dropbox.com/s/npvzonzakkjqsbc/CV.pdf?dl=0"
+                href="https://www.dropbox.com/s/lfazvco9hgy6qq0/CV.pdf?dl=0"
                 target="_blank"
                 rel="noopener noreferrer"
             >

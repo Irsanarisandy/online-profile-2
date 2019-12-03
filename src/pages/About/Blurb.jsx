@@ -6,10 +6,11 @@ import styles from './styles';
 const Blurb = () => (
     <div id="blurb" style={styles.blurb}>
         <p>
-            Hi there! I am a Computer Science graduate from the University of
-            Auckland, striving to become a full stack web developer. I have
-            experience in front-end and back-end languages, including database
-            creation and integration.
+            Hi there! My name is Irsan Arisandy and I am a full-stack website
+            developer, particularly on the front-end side using various
+            JavaScript Frameworks such as React and Angular. I became a website
+            developer because I love solving real-life problems and getting
+            satisfaction out of it.
         </p>
         <br />
         <p>
@@ -24,9 +25,12 @@ const Blurb = () => (
             internship with SilverStripe, I learnt BEM methodology, the use of
             PHP in back-end, and how the SilverStripe CMS is used as a tool to
             content load websites, while also improving my knowledge in Agile,
-            Vue JS and front-end as a whole. I am confident to say that all the
-            experiences I have gained during my internship will help develop my
-            IT career.
+            Vue JS and front-end as a whole. Furthermore, during my time with
+            Westpac as a contractor, I have gained even more skills which
+            includes learning Angular for the first time and improving my soft
+            skills to communicate clearer in a team. I am confident to say that
+            all the experiences I have gained during my internship will help
+            develop my IT career.
         </p>
         <br />
         <p>I hope to hear from you!</p>
@@ -41,7 +45,7 @@ const Blurb = () => (
         </Button>
         <Button
             variant="outlined"
-            href="https://www.dropbox.com/s/npvzonzakkjqsbc/CV.pdf?dl=0"
+            href="https://www.dropbox.com/s/lfazvco9hgy6qq0/CV.pdf?dl=0"
             target="_blank"
             style={styles.button}
         >

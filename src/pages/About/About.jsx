@@ -2,7 +2,6 @@ import React from 'react';
 import Typing from 'react-typing-animation';
 import Blurb from './Blurb';
 import dp from '../../assets/dp.jpg';
-// import { CustomLinkContainer } from '../../components/CustomLinkContainer';
 import { Skills } from '../../components/Skills';
 import styles from './styles';
 import './styles.css';

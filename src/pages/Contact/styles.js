@@ -1,6 +1,6 @@
 export default {
     container: {
-        height: '100%',
+        height: 'calc(100vh - 58px)',
         margin: '20px 0 0',
         textAlign: 'center'
     },

@@ -5,8 +5,12 @@ const skillList = {
             percentage: 75
         },
         {
+            skill: 'Angular',
+            percentage: 70
+        },
+        {
             skill: 'React Native',
-            percentage: 60
+            percentage: 55
         },
         {
             skill: 'Vue',
@@ -36,7 +40,7 @@ const skillList = {
         },
         {
             skill: 'C#',
-            percentage: 65
+            percentage: 70
         },
         {
             skill: 'PHP',
