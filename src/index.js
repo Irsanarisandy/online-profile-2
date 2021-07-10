@@ -1,4 +1,4 @@
-import { MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
@@ -6,9 +6,9 @@ import Router from './router';
 import theme from './styles/theme';
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
         <Router />
-    </MuiThemeProvider>,
+    </ThemeProvider>,
     document.getElementById('root')
 );
 registerServiceWorker();

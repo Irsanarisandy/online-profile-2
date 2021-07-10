@@ -27,7 +27,7 @@ class Games extends React.Component {
                         indicatorColor="primary"
                         textColor="primary"
                         onChange={this.handleChange}
-                        fullWidth
+                        variant="fullWidth"
                     >
                         <Tab label="Flappy Bird" style={styles.tab} />
                         <Tab label="Snakes" style={styles.tab} />
